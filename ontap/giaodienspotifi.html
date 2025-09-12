@@ -1,31 +1,71 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="Giao diện" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <title>Spotify</title>
+  <link rel="stylesheet" href="stylespt.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <table>
-    <header>
-        <div.a>
-        <a href="https://open.spotify.com/" target="_self"> 
-   <img src="../ontap/pic/Trangchuspotifi.jpg" alt="Trang chủ" border="0"/> 
+
+  <!-- HEADER -->
+  <header>
+<a href="http://127.0.0.1:5500/ontap/giaodienspotifi.html">
+  <i class="fa-solid fa-house"></i>
+  <input type="text" " value="what do you want to play?">
 </a>
-<b>What do you want to play?</b>
-</div.a>
 
+    
+  </header>
 
-    </header>
-    <anv>
-
-    </anv>
-    <section>
-
-    </section>
-    <aside>
+  <!-- MAIN: 3 CỘT -->
+  <main>
+    <!-- Sidebar trái -->
+    <aside class="sidebar left">
+        <div class="Mot"
+    <button>Your Library</button></div>
+    <br>
+     <div class="filters">
+    <button>Playlist</button>
+        <button>Podcasts</button>
+                <button>Album</button>
+     </div>
 
     </aside>
-    </table>
+
+    <!-- Nội dung trung tâm -->
+    <section class="center">
+      <!-- Nút lọc -->
+      <div class="filters">
+        <button>All</button>
+        <button>Music</button>
+        <button>Podcasts</button>
+      </div>
+
+      <!-- Danh sách bài hát -->
+      <div class="songs-grid">
+        <!-- Mỗi bài hát -->
+        <div class="song-card">
+          
+          <span> Song</span>
+        </div>
+        <div class="song-card">
+         
+          <span>Song</span>
+        </div>
+        <div class="song-card">
+          
+          <span>Song</span>
+        </div>
+        <div class="song-card">
+          <span> Song</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sidebar phải -->
+    <aside class="sidebar right"></aside>
+  </main>
+
 </body>
 </html>
