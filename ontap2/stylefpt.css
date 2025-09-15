@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+}
+.muc {
+    list-style: none;
+color: aliceblue;
+    display: flex;      /* làm cho nằm ngang */
+    gap: 20px;          /* khoảng cách giữa các mục */
+}
+header {
+    display: flex;
+padding: 20px 0px 10px 70px;
+    }
+i {
+    padding: 20px 0px 10px 200px;
+    color: aliceblue;
+ }
+input[type="text"] {
+    background-color: #d63c1c;   /* màu đỏ cam */
+    color: white;                /* chữ trắng */
+    border: none;                /* bỏ viền */
+    padding: 10px 10px;          /* khoảng cách trong nút */
+    border-radius: 8px;          /* bo góc */
+    font-size: 20px;             /* cỡ chữ */
+    font-weight: bold;           /* chữ đậm */
+    width: 80px;
+    margin-left: -100px;
+
+    }
+    input[type="text"]::placeholder {
+    color: #faf8f8; /* placeholder xám sáng dễ nhìn hơn */
+}
+.login{
+    color: white;                /* chữ trắng */
+    border: none;                /* bỏ viền */
+margin-top: -48px;
+margin-left: 10px;
+}
+
+div{
+    margin-auto;
+}

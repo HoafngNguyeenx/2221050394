@@ -1,0 +1,21 @@
+
+    .dangnhap input{    background-color: hwb(121 11% 16%);   /* màu đỏ cam */
+    color: white;                /* chữ trắng */
+    border: none;                /* bỏ viền */
+    border-radius: 5px;          /* bo góc */
+    font-size: 20px;             /* cỡ chữ */
+    font-weight: bold;           /* chữ đậm */
+    width: 100px;
+}
+body {
+    background-color: rgb(241, 239, 237);
+    margin:auto;
+   height: 1000px;
+   width: 500px;
+ }
+div {
+    background-color: aliceblue;
+ }
+ div {
+    text-align: center;
+ }
