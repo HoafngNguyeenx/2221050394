@@ -24,19 +24,19 @@ input[type="text"] {
     font-size: 20px;             /* cỡ chữ */
     font-weight: bold;           /* chữ đậm */
     width: 80px;
-    margin-left: -100px;
+    margin-left: 30px;
 
     }
     input[type="text"]::placeholder {
     color: #faf8f8; /* placeholder xám sáng dễ nhìn hơn */
 }
-.login{
-    color: white;                /* chữ trắng */
-    border: none;                /* bỏ viền */
-margin-top: -48px;
-margin-left: 10px;
+.login {
+    color: white;
+    margin-left: 10px;
+    margin-top: 15px; /* hoặc bỏ luôn */
 }
 
-div{
-    margin-auto;
-}
+
+
+
+
