@@ -1,0 +1,41 @@
+selector {
+    property: value;
+}
+selector: thành phần HTML cần áp dụng (ví dụ: p, h1, .class, #id)
+
+property: thuộc tính CSS
+
+value: giá trị
+2 màu sắc, nền
+color: red;                 /* Màu chữ */
+background-color: yellow;   /* Màu nền */
+background-image: url("pic.jpg"); /* Ảnh nền */
+3 văn bản
+font-size: 16px;        /* Cỡ chữ */
+font-family: Arial;     /* Font chữ */
+font-weight: bold;      /* Đậm */
+font-style: italic;     /* Nghiêng */
+text-align: center;     /* Căn giữa */
+text-decoration: none;  /* Bỏ gạch chân */
+4 kthuoc, khoảng cách
+width: 200px;       /* Chiều rộng */
+height: 100px;      /* Chiều cao */
+margin: 20px;       /* Lề ngoài */
+padding: 10px;      /* Lề trong */
+5 viền
+border: 2px solid black;      /* viền liền */
+border-radius: 10px;          /* bo góc */
+6 vị trí
+display: block;       /* dạng khối */
+display: inline;      /* nằm trên 1 dòng */
+display: flex;        /* bố cục linh hoạt */
+
+position: relative;   /* tương đối */
+position: absolute;   /* tuyệt đối */
+position: fixed;      /* cố định */
+7 hiệu ứng
+opacity: 0.8;                     /* độ trong suốt */
+transition: 0.5s;                 /* hiệu ứng chuyển đổi */
+transform: rotate(15deg);         /* xoay */
+box-shadow: 5px 5px 10px gray;    /* đổ bóng */
+

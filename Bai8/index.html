@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="Bài 8" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="script.js"></script>
+    <script>
+        //Để viết chú thích js dùng kí tự"//"
+        //Javascript sử dụng dấu"+" để nối chuỗi
+        document.writeln("Hello Word + <br>");
+        //Khai báo biến
+        let HoTen = "Nguyen Van Hoang";
+        document.writeln(HoTen + "<br>")
+        //Khai báo hằng số sử dụng const
+        const pi = 3.14
+    
+        let SoThuNhat = 10;
+        let SoThuHai = 5
+        let KetQua = 0
+        // +
+        KetQua = SoThuNhat + SoThuHai
+        document.writeln(KetQua)
+
+        //-
+        KetQua = SoThuNhat - SoThuHai
+        document.writeln(KetQua)
+
+        //*
+         KetQua = SoThuNhat * SoThuHai
+         document.writeln(KetQua)
+
+        // /
+        KetQua = SoThuNhat / SoThuHai
+        document.writeln(KetQua)
+
+        // % chia lấy dư
+        KetQua = SoThuNhat % SoThuHai
+        document.writeln(KetQua)
+        // ++
+        KetQua++;
+        document.writeln(KetQua)
+        // --
+        KetQua--;
+        document.writeln(KetQua)
+        //SoThuNhat=SoThuNhat + SoThuHai
+        SoThuNhat += SoThuHai;
+        document.writeln(SoThuNhat )
+
+        //SoThuBa=SoThuBa - SoThuTu
+        let SoThuBa = 10;
+        let SoThuTu = 5;
+        SoThuBa -= SoThuTu;
+        document.writeln(SoThuBa)
+         //SoThuNam=SoThuSau  so sánh bằng ==
+        let SoThuNam = 10;
+        let SoThuSau = 5;
+        document.writeln(SoThuNam == SoThuSau)
+        //"thêm =" so sánh cả kiểu dữ liệu(vd: 10; "10")
+        //SoThuBay!=SoThuTam so sánh khác
+        let SoThuBay = 10;
+        let SoThuTam = 5;
+        document.writeln(SoThuNam != SoThuSau)
+        //
+        let ThongTinSinhVien = {
+            HoTen: "Nguyen Van Hoang",
+            Tuoi: 21,
+            GioiTinh: "Nam",
+            Lop: "Công nghệ thông tin địa học k67"
+        } 
+        document.writeln("Xin Chào Bạn " + ThongTinSinhVien.HoTen + ThongTinSinhVien.Tuoi + ThongTinSinhVien.GioiTinh + ThongTinSinhVien.Lop )
+         let ThongTinSinhVienHoang = {
+            HoTen: "Nguyễn Văn Hoàng",
+            Tuoi: 21,
+            GioiTinh: "Nam",
+            Lop: "Công nghệ thông tin địa học k67",
+            DiaChi:  {
+            ThanhPho: "Hà Nội",
+            Quan: "Bắc Từ Liêm",
+            Duong: "Cổ Nhuế",}
+        }
+        document.writeln(
+    ThongTinSinhVienHoang.DiaChi.ThanhPho + ", " +
+    ThongTinSinhVienHoang.DiaChi.Quan + ", " +
+    ThongTinSinhVienHoang.DiaChi.Duong + "<br>"
+);
+
+// In thông tin tổng hợp
+document.writeln(
+    "Xin Chào: " + ThongTinSinhVienHoang.HoTen + "<br>" +
+    "Lớp: " + ThongTinSinhVienHoang.Lop + "<br>" +
+    "Thành Phố: " + ThongTinSinhVienHoang.DiaChi.ThanhPho + "<br>" +
+    "Quận: " + ThongTinSinhVienHoang.DiaChi.Quan + "<br>" +
+    "Đường: " + ThongTinSinhVienHoang.DiaChi.Duong
+);
+    </script>
+</body>
+</html>
