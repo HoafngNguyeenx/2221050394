@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let donHang={
+            maDonHang: "abc",
+            thongTinKhachHang:{
+                hoTen:"Nguyễn Văn Hoàng",
+                sdt:"0842828799",
+                thanThiet:"true"
+            },
+            danhSachSanPham:{
+                maSP1:"cf",
+                tenSP1:"Cà phê",
+                soLuong1:10,
+                giaTien1:10000,
+                maSP2:"mc",
+                tenSP2:"matcha",
+                soLuong2:13,
+                giaTien2:15000,
+                maSP3:"TS",
+                tenSP3:"trà sữa",
+                soLuong3:15,
+                giaTien3:30000
+
+            },
+            thanhToan:true,
+            diaChi:"119 đường Cổ Nhuế,Cổ nhuế 2"
+        }
+        let tongGiaTriDonHang=((donHang.danhSachSanPham.giaTien1*donHang.danhSachSanPham.soLuong1)
+                                + (donHang.danhSachSanPham.giaTien2*donHang.danhSachSanPham.soLuong2)
+                                +(donHang.danhSachSanPham.giaTien3*donHang.danhSachSanPham.soLuong3)
+                                );
+        document.writeln(tongGiaTriDonHang);
+        //String
+        let HoTen = "Nguyen Van Hoang";
+        document.writeln("br độ dài chuỗi là: " +hoTen.length);
+        document.writeln("br Vị trí thứ 0: "+hoten[0] );
+       //Cắt chuỗi
+       document.writeln("<br> cắt ở vị trí thứ 3-5" +hoTen.slide(3.5));
+       document.writeln("<br> đổi vị trí chuỗi: " +hoTen.replace("Hoàng", "Hoàn"));
+       // document writeln(myString.replace(" ", "Hi"));
+       //index0f("kí tự cần tìm kiếm") Có: Vị trí, không: -1 
+       // //includes("kí tự cần tìm kiếm") True/False 
+       // document writeln(myString.includes ("e")) ;
+ript›
+
+
+    </script>
+</body>
+</html>
