@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,48 +7,95 @@
 </head>
 <body>
     <script>
-        let donHang={
-            maDonHang: "abc",
-            thongTinKhachHang:{
-                hoTen:"Nguyễn Văn Hoàng",
-                sdt:"0842828799",
-                thanThiet:"true"
+        //khai báo biến
+        let donHang = {
+            maDonHang: "2221050590",
+            thongTinKhachHang: {
+                hoTen: "Nguyen Van Hoang",
+                soDienThoai: "0842xxxxxx",
+                trangThaiThanhVien: true
             },
-            danhSachSanPham:{
-                maSP1:"cf",
-                tenSP1:"Cà phê",
-                soLuong1:10,
-                giaTien1:10000,
-                maSP2:"mc",
-                tenSP2:"matcha",
-                soLuong2:13,
-                giaTien2:15000,
-                maSP3:"TS",
-                tenSP3:"trà sữa",
-                soLuong3:15,
-                giaTien3:30000
-
+            danhSachSanPham: {
+                caPhe: {
+                    tenSanPham: "Cà phê",
+                    maSanPham: "100103",
+                    soLuong: 2,
+                    giaTien: 20
+                },
+                matcha: {
+                    tenSanPham: "Matcha",
+                    maSanPham: "100104",
+                    soLuong: 1,
+                    giaTien: 25
+                },
+                traSua: {
+                    tenSanPham: "Trà sữa",
+                    maSanPham: "100105",
+                    soLuong: 1,
+                    giaTien: 25
+                },                
             },
-            thanhToan:true,
-            diaChi:"119 đường Cổ Nhuế,Cổ nhuế 2"
+            trangThaiThanhToan: true,
+            diaChiGiaoHang: "119 đuong Co Nhue"
         }
-        let tongGiaTriDonHang=((donHang.danhSachSanPham.giaTien1*donHang.danhSachSanPham.soLuong1)
-                                + (donHang.danhSachSanPham.giaTien2*donHang.danhSachSanPham.soLuong2)
-                                +(donHang.danhSachSanPham.giaTien3*donHang.danhSachSanPham.soLuong3)
-                                );
-        document.writeln(tongGiaTriDonHang);
+        tongTienCaPhe = donHang.danhSachSanPham.caPhe.soLuong * donHang.danhSachSanPham.caPhe.giaTien;
+        tongTienMatcha = donHang.danhSachSanPham.matcha.soLuong * donHang.danhSachSanPham.matcha.giaTien;
+        tongTienTraSua = donHang.danhSachSanPham.traSua.soLuong * donHang.danhSachSanPham.traSua.giaTien;
+        tongTien = tongTienCaPhe + tongTienMatcha + tongTienTraSua;
+        document.writeln("Tổng giá trị đơn hàng: "+ tongTien)
+
+
         //String
-        let HoTen = "Nguyen Van Hoang";
-        document.writeln("br độ dài chuỗi là: " +hoTen.length);
-        document.writeln("br Vị trí thứ 0: "+hoten[0] );
-       //Cắt chuỗi
-       document.writeln("<br> cắt ở vị trí thứ 3-5" +hoTen.slide(3.5));
-       document.writeln("<br> đổi vị trí chuỗi: " +hoTen.replace("Hoàng", "Hoàn"));
-       // document writeln(myString.replace(" ", "Hi"));
-       //index0f("kí tự cần tìm kiếm") Có: Vị trí, không: -1 
-       // //includes("kí tự cần tìm kiếm") True/False 
-       // document writeln(myString.includes ("e")) ;
-ript›
+        let hoTen = "Nguyen Van Hoang";
+        document.writeln("<br>"+hoTen.length);
+        //truy cập 1 kí tự của chuỗi
+        let myString = "Hello Hoang";
+        document.writeln("<br>"+ myString[0]);
+        document.writeln("<br>"+ myString[4]);
+        //cắt chuỗi: 
+        // slice: lấy từ start -> trước end
+        document.writeln("<br>"+myString.slice(1,4));
+        //thay thế chuỗi
+        document.writeln(myString.replace("Hello", "Hi"));
+        document.writeln(myString.replace("", "Hi"));
+        //chữ hoa - chữ thường
+        document.writeln(myString.toUpperCase());
+        document.writeln(myString.toLowerCase());
+        //Tìm kiếm xem kí tự có trong chuỗi không --> trả về vị trí
+        document.writeln(myString.indexOf("i"));  //trả về -1 nếu kí tự ko có trong chuỗi
+        document.writeln(myString.indexOf("e"));
+        //tìm xem trong chuỗi có tồn tại kí tự ko --> true/false
+        document.writeln(myString.includes("i"));
+        //tách chuỗi thành mảng
+        document.writeln(myString.split("")); //tách tất cả
+        document.writeln(myString.split("").length);
+        document.writeln(myString.split(" "));
+        document.writeln(myString.split("e"));
+
+    //kiểm tra chuỗi có bắt đầu bằng kí tự nào ko
+        document.writeln(myString.startsWith("Hoan")); //trả về true/false
+        //chuyển về chữ về số
+        let so="123";
+        document.writeln(typeof(so));
+        document.writeln(typeof(Number(so)));
+        //Thuộc tính Number: toFixed() số thập phân
+        var pi = 3.14159;
+        document.writeln(pi.toFixed(2));
+        document.writeln(isNaN("10"));
+        //ngay
+        let toDay = new Date();
+        document.writeln("<br>"+ toDay);
+        //lấy năm
+        document.writeln(toDay.getFullYear());
+        document.writeln(toDay.getMonth());  //tính bắt đầu từ tháng 0
+        document.writeln(toDay.getDate()); //trả về ngày
+        document.writeln(toDay.getDay()); //trả về thứ (CN: 0,...)
+        document.writeln(toDay.getHours()); //lấy giờ
+        document.writeln(toDay.getMinutes()); //lấy phút
+        document.writeln(toDay.getSeconds()); //lấy giây
+
+        let day = new Date("2023-09-26");
+        document.writeln("<br>"+ day);
 
 
     </script>
