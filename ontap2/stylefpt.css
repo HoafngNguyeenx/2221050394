@@ -36,7 +36,9 @@ input[type="text"] {
     margin-top: 15px; /* hoặc bỏ luôn */
 }
 
-
-
+div {
+    color: white;
+    font-size: 40px;
+}
 
 
