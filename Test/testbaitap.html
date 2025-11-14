@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .head-container{
+            display: flex;
+            width: 80%;
+            margin: auto;
+        }
+        header{
+            width: 100%;
+            height: 8vh;
+            background-color:#000 ;
+        }
+        .menu{
+            display: flex;
+            justify-content: flex-end;
+            margin: auto 10px;
+            padding-right: 170px;
+            
+        }
+        .menu div a{
+            text-decoration: none;
+            color: white;
+            
+        }
+        .icon img {
+            width: 125px;
+            height: 52px;
+        }
+        .item{
+            font-weight: bold;
+            justify-content: center;
+            padding-left: 10px;
+            font-size: 15px;
+        }
+        .btn-noti img {
+            width: 22px;
+            height: 22px;
+
+        }
+        .Login-menu{
+            display: flex ;
+            margin: auto ;
+            
+        }
+        .btn-payment a {
+            color: white;
+            background-color: rgb(236, 98, 34);
+            text-decoration: none;
+            padding: 10px;
+            border-radius: 15px;
+            border: 1px solid white ;
+        }
+        .btn-login a {
+            color: white;
+            text-decoration: none;
+
+        }
+        .Login-item{
+            padding-left: 10px;
+            font-size: 15px;
+        }
+        .container{
+            width: 80%;
+            margin: auto;
+            background-color: black;
+            
+        }
+        .top-banner img{
+            width: 100%;
+            
+        }
+        .last-banner img {
+            width: 100%;
+        }
+        body{
+            background-color: #333333;
+        }
+        .phim{
+            display: flex;
+        }
+    </style>
+</head>
+<header>
+    <div class = "head-container">
+        <div class = "icon"><img src="logowebsite4x_1748221195181.png"></div>
+        <div class = "menu">
+            <div class = "item"><a href="#">trang chủ</a></div>
+            <div class = "item"><a href="#">Phim Bộ</a></div>
+            <div class = "item"><a href="#">V.league</a></div>
+            <div class = "item"><a href="#">Thiếu nhi</a></div>
+            <div class = "item"><a href="#">Xem Thêm</a></div>
+        </div>
+
+        <div class = "Login-menu">
+            <div class = "btn-search Login-item " ><img  src="search-hover.png" alt=""></div>
+            <div class = "btn-noti Login-item "><img src="icon-alarm-hover.png" alt=""></div>
+            <div class = "btn-payment Login-item "><a href="#">Mua gói</a></div>
+            <div class = "btn-login Login-item "><a href="#">Đăng Nhập</a></div>
+        </div>
+
+
+
+    </div>
+    
+</header>
+<body>
+    <div class ="container">
+        <div class = banner>
+            <div class = "top-banner"><img src="image.png" alt=""></div>    
+            <div class = "last-banner"><img id = 'banner2' src="Screenshot 2025-09-15 134615.png" alt=""> 
+            <div style = "color:white;" id = 'namephim' >
+            </div>
+              <div style = "color:white;" id = 'namsinh' >
+            </div>
+              <div style = "color:white;" id = 'quocgia' >
+            </div>
+             <div  style = "color:white;" id = 'thoiluong' >
+            </div>
+            
+            </div>    
+        
+        
+        </div>
+        <div class = "phim">
+            <div onclick = "clickphim(1)" class = "muado">
+                <img width ="100px " src = "mua-do-top-1-1756596974-4686-1756597005.webp">
+            </div>
+             <div onclick = "clickphim(2)" class = "conan">
+                <img  width ="100px " src = "biqr90h7_1920x1080-conan-viendando.png">
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+<script src ="script.js"
+</html>

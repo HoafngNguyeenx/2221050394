@@ -10,7 +10,7 @@ let danhSachphim = [
         theLoai: "Phim chiếu rạp"
     }
     {
-        id: 2,
+        id: 3,
         tenPhim: "Conan"
         namPhathanh: 2020
         thoiLuong: 2
@@ -20,7 +20,7 @@ let danhSachphim = [
 
     }
     {
-        id: 3,
+        id: 2,
         tenPhim: "Ma Đồng Náo Hải"
         namPhathanh: 2025
         thoiLuong: 2

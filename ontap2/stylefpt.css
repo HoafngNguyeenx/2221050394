@@ -33,12 +33,58 @@ input[type="text"] {
 .login {
     color: white;
     margin-left: 10px;
-    margin-top: 15px; /* hoặc bỏ luôn */
+    margin-top: 15px; 
 }
-
+.logo img {
+width: 100px;   
+  height: 40px;
+  margin-top: -100px;
+}
 div {
     color: white;
-    font-size: 40px;
+    font-size: 20px;
+     margin-left: 75px; 
+     margin-right: 75px;
+    margin-top: 70px;
+    font-weight: 600; /* hơi đậm */
+}
+img {
+  width: 200px;   
+  height: 150px;   
+   border-radius: 10px
+}
+.anh {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+    
+}
+.tungphim {
+    margin: 0;
+}
+p {
+    margin: 0;
+    font-weight: 400; /* hơi đậm */
+    font-size: 18px;
 }
 
-
+button {
+  color: white;
+  border: none;
+  width: 223px;
+height: 90px;
+  border-radius: 8px;
+}
+.nutbam {
+    margin-inline: 70px;
+}
+ .top-banner img{
+            width: 100%;
+            height:100%;
+            
+        }
+        .last-banner img {
+            width: 100%;
+            height: 100%;
+        }

@@ -9,15 +9,17 @@
 </head>
 <body>
     <header>
+        <div class="logo">
         <a href="http://127.0.0.1:5500/ontap2/FPTPLAY.html">
-        <img src="../ontap2/Pic/LOGO_FPT_Play.png" width="150"></a>
+        <img src="../ontap2/Pic/LOGO_FPT_Play.png" ></a>
+        </div>
     <nav>
         <ul class="muc">
              <li >TRANG CHỦ </li>
                 <li>TRUYỀN HÌNH </li>
                 <li>PHIM BỘ </li>
+                <Li>ANIME</Li>
                 <li>VLEAGUE </li>
-                <li>THIẾU NHI </li>
                 <li>XEM THÊM </li>
                
         </ul>
@@ -27,19 +29,164 @@
          <input type="text" name="mua" placeholder="Mua gói">
     <div class ="login">Đăng nhập</div>
     </header>
-    
-    <div>Phim mới</div>
+    <div class = banner>
+            <div class = "top-banner"><img src="image.png" alt=""></div>    
+            <div class = "last-banner"><img id = 'banner2' src="Screenshot 2025-09-15 134615.png" alt=""> 
+            <div style = "color:white;" id = 'namephim' >
+            </div>
+              <div style = "color:white;" id = 'namsinh' >
+            </div>
+              <div style = "color:white;" id = 'quocgia' >
+            </div>
+             <div  style = "color:white;" id = 'thoiluong' >
+            </div>
             
-                    <img src="../bai13/Pic/mua do.jpg">
-                    <div>Mưa đỏ</div>
-               
-                    <img src="../bai13/Pic/natra.jpg">
-                    <div>Ma đồng náo hải</div>
-               
-                    <img src="../bai13/Pic/conan.jpg">
-                    <div>Conan</div>
-
+            </div>    
         
-    
+    <div>Cày phim mỗi ngày</div>
+        <div class="anh">
+        <button onclick="clickphim(1)">
+            <div class="tungphim">
+        <img src="../ontap2/Pic/mua do.jpg" >
+        <p>Mưa đỏ</p></div></button>
+        <button onclick="clickphim(2)">
+        <div class="tungphim">
+        <img src="../ontap2/Pic/natra.jpg">
+       <p>Ma đồng náo hải</p></div></button>
+       <div class="tungphim">
+        <img src="../ontap2/Pic/conan.jpg" >
+       <p>Conan thám tử lừng danh</p></div>
+       <div class="tungphim">
+        <img src="../ontap2/Pic/Hoạt hình/z7208206302225_2c25acbc29056a1dde37b69bd3aa5b15.jpg">
+       <p>Kungfu Panda</p></div>
+       <div class="tungphim">
+        <img src="../ontap2/Pic/Hoạt hình/z7208206302283_ba43e17950c4e9dd95c9971b48e7d909.jpg">
+       <p>Doraemon</p></div>
+       <div class="tungphim">
+        <img src="../ontap2/Pic/phim bộ/z7208221805163_b1a4880c5b6c2a191cded2d3ae479f37.jpg" >
+        <p>Đấu la đại lục</p></div>
+       </div>
+    </div>
+    <div>Mới ra mắt</div>
+    <div class="anh">
+        <div class="tungphim">
+        <img src="../ontap2/Pic/phim bộ/z7208221805224_eefce1bbdb6b807a8cd92922d71821bb.jpg" >
+        <p>Phàm nhân tu tiên</p></div>
+        <div class="tungphim">
+        <img src="../ontap2/Pic/phim bộ/z7208221805225_f8bd270725bf5e610b8c2e69138bc9ec.jpg">
+       <p>Con đường bá chủ</p></div>
+       <div class="tungphim">
+        <img src="../ontap2/Pic/Phim Việt/z7208212350181_a3e9649a0f007c96f3e22b84c349c6b7.jpg">
+       <p>Mắt biếc</p></div>
+       <div class="tungphim">
+        <img src="../ontap2/Pic/Phim Việt/z7208212350223_75e10f49c6d6f37ade3e84fa3218ac54.jpg">
+       <p>Tôi thấy hoa vàng trên cỏ xanh</p></div>
+       <div class="tungphim">
+        <img src="../ontap2/Pic/phim bộ/z7208221906145_44cce9c9e7f3418c9760920477218624.jpg">
+       <p>Cười xuyên biên giới</p></div>
+       <div class="tungphim">
+        <img src="../ontap2/Pic/Phim Việt/z7208212350227_45f630c6dfd52d8c0140bbe6846eeb16.jpg" >
+        <p>Duyên ma</p></div>
+       </div>
+
+    <div>Sự kiện thể thao</div>
+    <div class="anh">
+        <div class="tungphim">
+        <img src="../ontap2/Pic/thể thao/z7208235070613_859318a2e053276e2eb9203d40adfd9d.jpg" >
+        <p>Bản tin thể thao</p></div>
+        <div class="tungphim">
+        <img src="../ontap2/Pic/thể thao/z7208235710766_2e321cd54f84c0a79d3bc468282b24ba.jpg">
+       <p>Trận đấu phát lại</p></div>
+       <div class="tungphim">
+        <img src="../ontap2/Pic/thể thao/z7208237708511_cbb148191235a3856918f794a7d72a4e.jpg">
+       <p>Phát lại TPHCM-Quảng Ninh</p></div>
+       <div class="tungphim">
+        <img src="../ontap2/Pic/thể thao/z7208237708554_e0ce88cb4cbc9c935db4ebc5a74701e1.jpg">
+       <p>Cầu lông ngày 10/11</p></div>
+       <div class="tungphim">
+        <img src="../ontap2/Pic/thể thao/z7208237756480_b882227bc316417fa8834a0ee4a52883.jpg">
+       <p>Cầu lông ngày 10/11</p></div>
+       <div class="tungphim">
+        <img src="../ontap2/Pic/thể thao/z7208237756481_39ced0e736c8699699a97d941467a1ad.jpg" >
+        <p>Sự kiện sắp diễn ra</p></div>
+       </div>
+    </div>
+    <div>Phim bộ hot</div>
+    <div class="anh">
+        <div class="tungphim">
+        <img src="../ontap2/Pic/Phim Việt/z7208212350227_45f630c6dfd52d8c0140bbe6846eeb16.jpg" >
+        <p>Mưa đỏ</p></div>
+        <div class="tungphim">
+        <img src="../ontap2/Pic/phim bộ/z7208221856107_abaaf0ec75f4ab2a4afe2430a0ae7449.jpg">
+       <p>Mưa đỏ</p></div>
+       <div class="tungphim">
+        <img src="../ontap2/Pic/phim bộ/z7208221856105_1cf3e1954177b34a850f5f87f64641e0.jpg">
+       <p>Mưa đỏ</p></div>
+       <div class="tungphim">
+        <img src="../ontap2/Pic/phim bộ/z7208221805225_f8bd270725bf5e610b8c2e69138bc9ec.jpg">
+       <p>Mưa đỏ</p></div>
+       <div class="tungphim">
+        <img src="../ontap2/Pic/phim bộ/z7208221805224_eefce1bbdb6b807a8cd92922d71821bb.jpg">
+       <p>Mưa đỏ</p></div>
+       <div class="tungphim">
+        <img src="../ontap2/Pic/Phim Việt/z7208212350223_75e10f49c6d6f37ade3e84fa3218ac54.jpg" >
+        <p>Mưa đỏ</p></div>
+       </div>
+    </div>
+    <div>Anime hot</div>
+    <div class="anh">
+       <div class="tungphim">
+        <img src="../ontap2/Pic/Hoạt hình/z7185096408506_8c92686de7a0fba752703c0a2fde06f1.jpg" >
+        <p>Conan tập dài</p></div>
+        <div class="tungphim">
+        <img src="../ontap2/Pic/Hoạt hình/z7208206302225_2c25acbc29056a1dde37b69bd3aa5b15.jpg">
+       <p>Kungfu Panda </p></div>
+       <div class="tungphim">
+        <img src="../ontap2/Pic/Hoạt hình/z7208206355684_069b2f8424b6a6262d3fb4050c16a5a7.jpg">
+       <p>Dragon Ball</p></div>
+       <div class="tungphim">
+        <img src="../ontap2/Pic/Hoạt hình/z7208206409169_0a54456f6e899a43c15bc4b2c477e36b.jpg">
+       <p>Pokemon</p></div>
+       <div class="tungphim">
+        <img src="../ontap2/Pic/Hoạt hình/z7208206302283_ba43e17950c4e9dd95c9971b48e7d909.jpg">
+       <p>Doraemon tập dài</p></div>
+       <div class="tungphim">
+        <img src="../ontap2/Pic/Hoạt hình/z7208206462093_27aba03278851003e5c49d9c4205dc88.jpg" >
+        <p>Ponyo</p></div>
+       </div>
+    </div>
+    <div>Phim Việt không thể bỏ lỡ</div>
+    <div class="anh">
+        <div class="tungphim">
+        <img src="../ontap2/Pic/Phim Việt/z7208212350227_45f630c6dfd52d8c0140bbe6846eeb16.jpg" >
+        <p>Duyên ma</p></div>
+        <div class="tungphim">
+        <img src="../ontap2/Pic/Phim Việt/z7208212350225_f8ce1e7bddece2cf6b1d46b87318b79d.jpg" >
+        <p>Thiên mệnh anh hùng</p></div>
+        <div class="tungphim">
+        <img src="../ontap2/Pic/Phim Việt/z7208212350220_e6f477564f0e001feef2b127607ad333.jpg">
+       <p>Trạng Quỳnh</p></div>
+       <div class="tungphim">
+        <img src="../ontap2/Pic/Phim Việt/z7208212350223_75e10f49c6d6f37ade3e84fa3218ac54.jpg">
+       <p>Tôi thấy hoa vàng trên cỏ xanh</p></div>
+       <div class="tungphim">
+        <img src="../ontap2/Pic/Phim Việt/z7208212350221_9f66e6d68cf3b1149aba2255f63a5d36.jpg">
+       <p>Em và Trịnh</p></div>
+       <div class="tungphim">
+        <img src="../ontap2/Pic/mua do.jpg">
+       <p>Mưa đỏ</p></div>
+       </div>
+    </div>
+    <div>Danh mục</div>
+    <div class="nutbam">
+    <button style="background-color: rgb(105, 156, 196); border: 2px solid rgb(244, 244, 245)">Truyền hình</button>
+    <button style="background-color: rgb(249, 75, 75); border: 2px solid rgb(244, 244, 245)">Trực tiếp</button>
+    <button style="background-color: rgb(171, 199, 230); border: 2px solid rgb(244, 244, 245)">Phim lẻ</button>
+    <button style="background-color: rgb(61, 73, 169); border: 2px solid rgb(244, 244, 245)">Phim bộ</button>
+    <button style="background-color: rgb(158, 54, 192); border: 2px solid rgb(244, 244, 245)">Anime</button>
+    <button style="background-color: rgb(207, 63, 116); border: 2px solid rgb(244, 244, 245)">Thể thao</button>
+</div>
+<script src = "script.js"></script>
 </body>
+
 </html>
