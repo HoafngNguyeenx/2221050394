@@ -3,8 +3,12 @@ create DATABASE IF not EXISTS quan_ly_web_phim;
 1. thể loại
     - id int primary key
     - ten_the_loai varchar(50)
+CREATE TABLE IF NOT EXISTS the loai (
+     id INT PRIMARY KEY AUTO_INCREMENT,
+    ten_the_loai varchar(50)
+);
 2. người dùng
-    - id int
+    - id int primary key
     - ten_dang_nhap varchar(50)
     - matKhau varchar(50)
     - ho_ten varchar(50)
@@ -12,9 +16,24 @@ create DATABASE IF not EXISTS quan_ly_web_phim;
     - sdt varchar(10)
     - vai_tro_id int 
     - ngay_sinh datetime
+CREATE TABLE IF NOT EXISTS nguoi dung(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    ten_dang_nhap varchar(50),
+    mat_khau varchar(50),
+    ho_ten varchar(50),
+    email varchar(50),
+    sdt varchar(10),
+    vai_tro_id INT,
+    ngay_sinh DATETIME
+    FOREIGN KEY (vai_tro_id) REFERENCES vai_tro(id)
+);
 3. vai_tro
     - id int
     - ten_vai_tro varchar(20)
+CREATE TABLE IF NOT EXISTS vai tro(
+    id INT AUTO_INCREMENT,
+    ten_vai_tro varchar(20)
+)
 4. phim
     - id int primary key
     - ten_phim varchar
@@ -26,7 +45,7 @@ create DATABASE IF not EXISTS quan_ly_web_phim;
     - trailer varchar
     - mo_ta text
 5. phim_dien_vien
-    - id int
+    - id int 
     - phim_id int
     - dien_vien_id int
 6. phim_the_loai
@@ -36,7 +55,7 @@ create DATABASE IF not EXISTS quan_ly_web_phim;
 7. quốc gia
     -id int
     -ten_quoc_gia varchar
-5. Tập phim
+8. Tập phim
     - id int
     - so_tap int
     - tieu_de varchar
