@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sach.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <header>
+         <div class="header-left">TRANG QUẢN LÝ</div>
+   <div class="header-right">
+ <div><i class="fa-solid fa-equals" style="background: rgb(0, 123, 255); color: white; padding: 5px; border-radius: 4px; border: 2px solid white;" ></i>
+   <span>HCMC Lib</span></div>
+     <div class="nguoidung" ><span>Xin chào, Cường</span>
+  <i class="fa-solid fa-caret-down"></i></div>
+</div>
+
+  </header>
+<aside class="sidebar">
+  <div class="left">
+        <div class="button">
+        <button>Tổng quan</button>
+        <button>Tài khoản</button>
+        <button>Chủ đề</button>
+        <button id="nutsach" onclick="sach()">Sách</button>
+        <button>Mượn/Trả</button></div>
+        </div>
+  <div class="right">
+        <main class="main" id = "main2">
+      <div class="sach" ><h2>Sách</h2>
+      <button onclick="themsach()" id="themsachmoi" >Thêm sách mới </button>
+      </div>
+  <table>
+    
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>Hình ảnh</th>
+        <th>Tựa sách</th>
+        <th>Tác giả</th>
+        <th>Giá trị</th>
+        <th>Số lượng</th>
+        <th>Chủ đề</th>
+        <th>Số cảm nghĩ</th>
+        <th>Lượt đọc</th>
+        <th>Lượt xem</th>
+        <th>Hành động</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td><img src="../BTL WEB/Pic/image_182274.jpg" style="width: 50px;" ></td>
+        <td>Truyện trước khi ngủ</td>
+        <td>Kim Đồng</td>
+        <td>50.000đ</td>
+        <td>100</td>
+        <td>Thiếu nhi</td>
+        <td>0</td>
+        <td>0</td>
+        <td>3</td>
+        <td>
+        <button style="background-color: rgb(237, 237, 53); color: black;; border-radius: 5px; height: 35px; width: 35px; padding: 10px 0px; "> <i class="fa-solid fa-gear"></i></button>
+        <button style="background-color: red; color: white;; border-radius: 5px; height: 35px; width: 35px; padding: 10px 0px;"><i class="fa-solid fa-trash-can"></i></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+    </main>
+  </div>
+  
+    </aside>
+    
+<!--<script src="scrip.js"></script>-->
+</body>
+</html>

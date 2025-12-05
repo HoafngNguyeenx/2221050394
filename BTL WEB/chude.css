@@ -1,0 +1,72 @@
+body {
+    background-color: rgb(12, 116, 228);
+    color: aliceblue;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+header {
+    display: flex; 
+}
+.header-left {
+    padding: 20px 0px 30px 80px;
+}
+.header-right {
+margin-left: 140px;
+display: flex;
+font-weight: initial;
+font-size: 20px;
+padding: 10px 10px 10px 10px;
+}
+.nguoidung{
+    margin-left: 850px;
+    font-size: 16px;
+}
+
+.button button {
+    background-color: rgb(214, 230, 255);
+    border: none;
+    border-radius: 3px;
+    display: flex;
+    padding: 20px 30px 35px 20px;
+     width: 250px;  
+    height: 30px;  
+    font-size: 16px;
+    margin-left: 20px;
+    color: black;
+    
+    
+}
+
+
+.main {
+    background-color: white;
+    color: black;
+     margin-left: 20%;
+     margin-top: -20%;
+
+}
+
+.chude h2 {
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+img {
+  width: 200px;   
+  height: 150px;   
+
+}
+.anh {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    
+    
+}
+.tungsach {
+    margin: 0;
+}
+

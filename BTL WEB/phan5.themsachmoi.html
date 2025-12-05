@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quản lý tài khoản</title>
+    <link rel="stylesheet" href="phan5.sach.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <div class="box-trai">
+        <div class="title" align="center">TRANG QUẢN LÝ</div>
+        <ul class="box">
+            <li><a href="#">Tổng quan</a></li>
+            <li ><a href="#">Tài khoản</a></li>
+            <li><a href="#">Chủ đề</a></li>
+            <li style="background-color: rgb(79, 79, 128)"><a href="#" style="color:aliceblue">Sách</li>
+            <li><a href="#">Mượn/trả</a></li>
+        </ul>
+    </div>
+    <div class="box-phai">
+        <ul class="menu">
+            <li><a href="#" style="font-size: 25px; font-weight: 100;font-family: Arial, Helvetica, sans-serif; padding: 5px;color: white;">Thư viện thành phố</a></li>
+            <li><a href="" style="font-size: 15px; font-weight: 100;font-family: Arial, Helvetica, sans-serif; padding: 5px;color: white;">Xin chào, Your Name</a>
+                <ul class="sub-menu">
+                    <li><a href="#">Trang chủ</a></li>
+                    <li><a href="#">Đăng xuất</a></li>
+                </ul>
+            </li>
+        </ul>
+        
+             <div class="right">
+        <main class="main" id = "main2">
+      <div class="sach" ><h2>Sách</h2>
+      <button onclick="themsach()" id="themsachmoi" >Thêm sách mới </button>
+      </div>
+  <table>
+    
+    <thead>
+      <tr>
+        <th>STT</th>
+        <th>Hình ảnh</th>
+        <th>Tựa sách</th>
+        <th>Tác giả</th>
+        <th>Giá trị</th>
+        <th>Số lượng</th>
+        <th>Chủ đề</th>
+        <th>Số cảm nghĩ</th>
+        <th>Lượt đọc</th>
+        <th>Lượt xem</th>
+        <th>Hành động</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>1</td>
+        <td><img src="../BTL WEB/Pic/image_182274.jpg" style="width: 50px;" </td>
+        <td>Truyện trước khi ngủ</td>
+        <td>Kim Đồng</td>
+        <td>50.000đ</td>
+        <td>100</td>
+        <td>Thiếu nhi</td>
+        <td>0</td>
+        <td>0</td>
+        <td>3</td>
+        <td>
+        <button style="background-color: rgb(237, 237, 53); color: black;; border-radius: 5px; height: 35px; width: 35px; padding: 10px 0px; "> <i class="fa-solid fa-gear"></i></button>
+        <button style="background-color: red; color: white;; border-radius: 5px; height: 35px; width: 35px; padding: 10px 0px;"><i class="fa-solid fa-trash-can"></i></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+    </main>
+  
+    
+<!--<script src="scrip.js"></script>-->
+    </div>
+</body>
+</html>

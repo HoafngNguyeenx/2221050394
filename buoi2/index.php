@@ -1,20 +1,102 @@
-<?php
-        //cookie
-    //. Lưu ở phía người dùng
-    //.dùng ch nhưng thông tin ít quan trọng
-    $cookieName = "user";
-    $cookieValue = "Hoang";
-    //86400 = 30 ngày
-        //setcookie($cookieName, $cookieValue,time()+86400 ), "/";
-        if(isset($_COOKIE[$cookieName])){
-            echo "cookie đã tồn tại"    ;
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Trang admin</title>
+   <style>
+      body{
+         margin: 0;
+      }
+      nav{
+         background-color: cornflowerblue;
+         display: flex;
+         justify-content: space-between;
+      }
+      ul{
+         display: flex;
+         list-style: none;
+         margin: 0;
+      }
+      li{
+         padding: 10px;
+      }
+      a{
+         text-decoration: none;
+      }
+   </style>
+</head>
+
+<body>
+    <?php
+        session_start();
+        if(!isset($_SESSION["username"])){
+            header('location: login.php');
         }
-        else{
-            echo "cookie chưa tồn tại";
-        }
-        //session
-    //.thông tin đăng nhập, giỏ hàng...
-    session_start();
-    $_SESSION["username"] = "Hoang";
-    echo $
-?>
+    ?>
+   
+   <header>
+      <nav>
+         <ul class=""> 
+            <li class=""><a class="" href="index.php?page_layout=phim">Phim</a></li>
+            <li class=""><a class="" href="index.php?page_layout=theloai">Thể loại</a></li>
+            <li class=""><a class="" href="index.php?page_layout=quocgia">Quốc gia</a></li>
+            <li class=""><a class="" href="index.php?page_layout=nguoidung">Người dùng</a></li>
+         </ul>
+         <ul class=""> 
+            <li class=""><?php echo "xin chào " . $_SESSION["username"]; ?></li>
+            <li class=""><a class="" href="index.php?page_layout=dangxuat">Đăng xuất</a></li>
+         </ul>
+      </nav>
+      <?php
+         if(isset($_GET['page_layout'])){
+            switch($_GET['page_layout']){
+               case 'phim':
+                  include "phim.php";
+                  break;
+               case 'theloai':
+                  include "theloai.php";
+                  break;
+               case 'quocgia':
+                  include "quocgia.php";
+                  break;
+               case 'nguoidung':
+                  include "nguoidung.php";
+                  break;
+               case 'themnguoidung':
+                  include "themnguoidung.php";
+                  break;
+               case 'capnhatnguoidung':
+                  include "capnhatnguoidung.php";
+                  break;
+               case 'themphim':
+                  include "themphim.php";
+                  break;
+               case 'capnhatphim':
+                  include "capnhatphim.php";
+                  break;
+               case 'themquocgia':
+                  include "themquocgia.php";
+                  break;
+               case 'capnhatquocgia':
+                  include "capnhatquocgia.php";
+                  break;
+               case 'themtheloai':
+                  include "themtheloai.php";
+                  break;
+               case 'capnhattheloai':
+                  include "capnhattheloai.php";
+                  break;
+               case 'dangxuat':         
+                  break;
+            }
+         }else{
+                include "phim.php";
+         }
+      
+      ?>
+   </header>
+</body>
+
+</html>
